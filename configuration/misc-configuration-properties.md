@@ -39,7 +39,7 @@ kafka:
 | `KAFKA_CLUSTERS_0_SCHEMAREGISTRYAUTH_OAUTH_CLIENTSECRET`   | Client secret for SchemaRegistry's OAuth authentication                                                                                         |
 | `KAFKA_CLUSTERS_0_SCHEMAREGISTRYAUTH_OAUTH_SCOPES`         | Comma-separated list of OAuth scopes to request for SchemaRegistry authentication                                                               |
 | `KAFKA_CLUSTERS_0_SCHEMAREGISTRYAUTH_OAUTH_TOKENCACHEENABLED` | Enable caching of OAuth tokens for SchemaRegistry. Default: `true`                                                                           |
-| `KAFKA_CLUSTERS_0_SCHEMAREGISTRYAUTH_OAUTH_TOKENREFRESHBUFFER` | Duration before token expiry to proactively refresh the token (e.g. `60s`, `PT1M`). Default: `60s`                                        |
+| `KAFKA_CLUSTERS_0_SCHEMAREGISTRYAUTH_OAUTH_TOKENREFRESHBUFFER` | Duration before token expiry to proactively refresh the token (e.g. `60s`, `360s`). Default: `60s`                                        |
 | `KAFKA_CLUSTERS_0_SCHEMAREGISTRYAUTH_OAUTH_MAXRETRIES`     | Max number of retries on 401 Unauthorized responses from SchemaRegistry. Default: `1`                                                           |
 | `KAFKA_CLUSTERS_0_SCHEMAREGISTRYSSL_KEYSTORELOCATION` | Path to the JKS keystore to communicate to SchemaRegistry                                                                                                        |
 | `KAFKA_CLUSTERS_0_SCHEMAREGISTRYSSL_KEYSTOREPASSWORD` | Password of the JKS keystore for SchemaRegistry                                                                                                                  |
