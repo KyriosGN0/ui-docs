@@ -48,7 +48,7 @@ kafka:
           scopes: schema-registry:read,schema-registry:write
           tokenCacheEnabled: true   # default: true
           tokenRefreshBuffer: 60s   # default: 60s
-          maxRetries: 1             # default: 1
+          maxRetries: 1             # default: 1 (retries on 401 Unauthorized)
       schema-registry-ssl:
         keystore-location: path/to/keystore/file.jks
         keystore-password: password
